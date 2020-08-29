@@ -1,2 +1,6 @@
 # hello-world
-6 is new
+
+Hi Mars!
+
+JT here. I like Cb w. Spar.
+I've been to Earth. 
