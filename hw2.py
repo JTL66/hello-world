@@ -39,11 +39,15 @@ while guess == "yes":
 
 
 #Program2
-l=list("Hello")
-l
-"".join(l)
-" ".join(l)
-"_".join(l)
+s = "codeleet"
+indices = [4,5,6,7,0,2,1,3]
+result = [0]*len(s)
+ls = list(s)
+
+print(ls)
+for i in range(len(s)):
+	result[indices[i]] = ls[i]
+print("". join(result))
 
   
 
