@@ -20,7 +20,7 @@ mylist=["one", "two","eleven", "one", "three", "two", "eleven", "three", "seven"
 print(count_frequency(mylist))
 
 #P3:
-wordlist = ["And now here is my secret, a very simple secret: It is only with the heart that one can see rightly; what is essential is invisible to the eye.",
+data_list = ["And now here is my secret, a very simple secret: It is only with the heart that one can see rightly; what is essential is invisible to the eye.",
 "All grown-ups were once children... but only few of them remember it.","People have forgotten this truth,\" the fox said. \"But you mustn’t forget it. You become responsible forever for what you’ve tamed. You’re responsible for your rose.",
 "It is the time you have wasted for your rose that makes your rose so important.",
 "The most beautiful things in the world cannot be seen or touched, they are felt with the heart.",
@@ -101,6 +101,12 @@ wordlist = ["And now here is my secret, a very simple secret: It is only with th
 "It's good to have a friend. Even if you're going to die.",
 "If you love a flower that lives on a star, then it's good at night, to look up at the sky. All the stars are blossoming."]
 
+query=input("query:")
+print(query)
+for i,quote in enumerate(data_list):
+    found_at = quote.find(query)
+    if( found_at >= 0):
+        print("Found at ", i, "..."+quote[found_at:found_at+50], "...")
 
 
 
