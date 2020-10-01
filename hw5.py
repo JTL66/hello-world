@@ -28,9 +28,14 @@ def bunnyEars2(bunnies):
 print("bunnyEars2(0)->", bunnyEars2(0))
 print("bunnyEars2(1)->", bunnyEars2(1))
 print("bunnyEars2(2)->", bunnyEars2(2))
-#pytest 
 
-
+#pytest in test_bunnyEars2.py
+from hw5 import bunnyEars2
+def test_bunnyEars2():
+  assert bunnyEars2(0) == 0
+  assert bunnyEars2(1) == 2
+  assert bunnyEars2(2) == 5
+  
 
 #P3:
 import timeit
